@@ -1,0 +1,16 @@
+metric,flatten,gap,change
+test_accuracy_pct,95.125,94.625,-0.500
+test_loss,0.534,0.506,-0.028
+validation_loss_full_set,0.646,0.670,0.024
+macro_auc,0.983,0.984,0.001
+ece,0.043,0.045,0.002
+recall_glioma_pct,82.500,81.500,-1.000
+recall_meningioma_pct,98.500,98.500,0.000
+recall_notumor_pct,100.000,100.000,0.000
+recall_pituitary_pct,99.500,98.500,-1.000
+macro_sensitivity_pct,95.125,94.625,-0.500
+macro_specificity_pct,98.375,98.208,-0.167
+train_val_loss_gap_last5,1.016,1.155,0.138
+accuracy_unseen_test_pct,93.645,92.977,-0.669
+accuracy_duplicate_test_pct,99.505,99.505,0.000
+training_time_min,63.036,68.386,5.349

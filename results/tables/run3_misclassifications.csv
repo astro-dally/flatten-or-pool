@@ -1,0 +1,15 @@
+model,true,predicted,count
+flatten,glioma,meningioma,23
+flatten,glioma,notumor,10
+flatten,glioma,pituitary,2
+flatten,meningioma,glioma,1
+flatten,meningioma,notumor,1
+flatten,meningioma,pituitary,1
+flatten,pituitary,meningioma,1
+gap,glioma,meningioma,21
+gap,glioma,notumor,15
+gap,glioma,pituitary,1
+gap,meningioma,notumor,3
+gap,pituitary,glioma,1
+gap,pituitary,meningioma,1
+gap,pituitary,notumor,1

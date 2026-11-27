@@ -1,0 +1,4 @@
+subset,images,accuracy
+all_test_images,800,95.25
+duplicates_of_training_images,202,99.50
+unseen_test_images,598,93.81

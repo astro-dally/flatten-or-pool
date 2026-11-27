@@ -1,0 +1,7 @@
+class,paper_sensitivity,ours_sensitivity,paper_specificity,ours_specificity
+glioma,100.00,84.50,99.80,100.00
+meningioma,97.39,97.00,99.80,97.00
+no_tumour,100.00,100.00,100.00,97.50
+pituitary,99.33,99.50,99.41,99.17
+macro,99.18,95.25,99.75,98.42
+accuracy,99.24,95.25,,

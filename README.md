@@ -5,7 +5,7 @@
 Dally R (231043) · Kalash Kumari Thakur (230136)\
 Newton School of Technology, Rishihood University
 
-[Paper (PDF)](paper/FlattenOrPool_IEEE_Paper.pdf) · [Reproduction notebook](https://www.kaggle.com/code/astrodally/cv-project) · [Ablation notebook](https://www.kaggle.com/code/astrodally/cv-project-h1)
+[Paper (PDF)](paper/CV_Project_Report.pdf) · [Presentation](presentation/final_presentation.pdf) · [Results](results/) · [Reproduction notebook](https://www.kaggle.com/code/astrodally/cv-project) · [Ablation notebook](https://www.kaggle.com/code/astrodally/cv-project-h1)
 
 ## Summary
 
@@ -37,20 +37,30 @@ Glioma is the weakest class (84.5% recall); most missed gliomas are predicted as
 | Final validation loss, GAP vs. Flatten | −15% | +46% | +3.8% |
 | Stage-1 validation loss, GAP vs. Flatten | **−42%** | **−47%** | **−33%** |
 
+![Flatten vs. GAP across three runs](results/figures/flatten_vs_gap_three_runs.png)
+
 None of the five pre-registered predictions held in all three runs. The only effect that replicated was the stage-1 reduction in validation loss.
 
 **Why the effect disappears:** unfreezing VGG16 blocks 4–5 for fine-tuning adds 12.98 M trainable weights. GAP's advantage in trainable parameters then drops from 48.5× (6.42 M vs. 0.13 M) to 1.48× (19.40 M vs. 13.11 M). The runs also diverged despite a fixed seed, most likely because of GPU non-determinism, producing a 2.75-point spread for GAP.
 
+![Run-3 learning curves](results/figures/run3_learning_curves.png)
+
+All tables, training histories and figures are in [`results/`](results/).
+
 ## Repository
 
 ```
-├── paper/
-│   ├── FlattenOrPool_IEEE_Paper.pdf
-│   └── latex/                  # LaTeX source and figures
 ├── notebooks/
 │   ├── cv-project.ipynb        # reproduction of Wong et al. (2025)
 │   └── cv-project-h1.ipynb     # Flatten vs. GAP ablation and failure analysis
-└── results/                    # ablation table, training histories, figures
+├── paper/
+│   └── CV_Project_Report.pdf   # final report (IEEE format)
+├── presentation/
+│   └── final_presentation.pdf
+└── results/
+    ├── figures/                # learning curves, confusion matrices, Grad-CAM, errors
+    ├── histories/              # per-epoch training logs
+    └── tables/                 # reproduction, leakage audit, ablation results
 ```
 
 ## Method

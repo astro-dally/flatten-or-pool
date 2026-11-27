@@ -1,0 +1,7 @@
+measure,predicted,observed,verdict
+test_accuracy,+1 to +3 pts,-0.50 pts,not met
+validation_loss,30-60% lower,3.8% higher,not met
+train_val_loss_gap,smaller,1.016 -> 1.155,not met
+glioma_recall,higher,82.5 -> 81.5 %,not met
+pituitary_recall_risk,may dip,99.5 -> 98.5 %,risk happened
+macro_auc,slightly higher,0.9830 -> 0.9842,met
